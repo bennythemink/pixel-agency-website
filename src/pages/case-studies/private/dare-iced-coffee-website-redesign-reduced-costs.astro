@@ -3,6 +3,7 @@ import ContactForm from '@components/ContactForm.astro'
 import { SitePage } from '@data/analyticsCaller'
 import Grid from '@components/Grid.astro'
 import Layout from '@layouts/Layout.astro'
+
 import CaseStudySectionText from '@components/case-studies/case-study/CaseStudySectionText.astro'
 import CaseStudyResults from '@components/case-studies/case-study/CaseStudyResults.astro'
 import CaseStudyHeader from '@components/case-studies/case-study/CaseStudyHeader.astro'
@@ -11,28 +12,28 @@ import CaseStudyMetaData from '@components/case-studies/case-study/CaseStudyMeta
 import CaseStudyShout from '@components/case-studies/case-study/CaseStudyShout.astro'
 import CaseStudyNav from '@components/case-studies/case-study/CaseStudyNav.astro'
 import CaseStudyImages from '@components/case-studies/case-study/CaseStudyImages.astro'
-
-import hero from '@assets/case-studies/miele/hero.webp'
-import squareOne from '@assets/case-studies/miele/squareOne.svg'
-import squareTwo from '@assets/case-studies/miele/squareTwo.webp'
-import wideOne from '@assets/case-studies/miele/wideOne.webp'
-import wideTwo from '@assets/case-studies/miele/wideTwo.webp'
 import { getCaseStudyNav } from '@data/caseStudies'
 
-const { previous, next } = getCaseStudyNav('miele')
+import hero from '@assets/case-studies/dare/hero.webp'
+import squareOne from '@assets/case-studies/dare/squareOne.svg'
+import squareTwo from '@assets/case-studies/dare/squareTwo.webp'
+import wideOne from '@assets/case-studies/dare/wideOne.webp'
+import wideTwo from '@assets/case-studies/dare/wideTwo.webp'
+
+const { previous, next } = getCaseStudyNav('dare-iced-coffee-website-redesign-reduced-costs')
 ---
 
 <Layout
-  title="Miele Case Study"
-  description="Digital consulting for Miele Australia, arm of the German appliance maker. Pixel Agency mapped its tech landscape ahead of a global SAP S/4HANA transition."
+  title="Dare Iced Coffee Case Study"
+  description="How Pixel Agency transformed Dare Iced Coffee's digital presence, delivering a 200%+ increase in time on site and a meaningful reduction in support load."
   published={false}
 >
   <article id="case-study-page">
     <CaseStudyHeader>
-      <span slot="title">Miele Australia</span>
-      <span slot="industry">Home Appliances</span>
-      <span slot="services">Consulting</span>
-      <span slot="duration">2 months</span>
+      <span slot="title">Dare Iced Coffee</span>
+      <span slot="industry">Food & Beverage</span>
+      <span slot="services">Discovery + direction, Design, Development</span>
+      <span slot="duration">3 months</span>
     </CaseStudyHeader>
 
     <CaseStudyToggleButton />
@@ -44,101 +45,80 @@ const { previous, next } = getCaseStudyNav('miele')
           <div class="case-study-left-pane min-w-0 overflow-hidden">
             <CaseStudyImages
               heroImage={{ src: hero }}
-              summary="How Pixel Agency helped Miele Australia document its full technology and data landscape ahead of a global SAP S/4HANA rollout, making the case for a market-specific implementation now serving as the benchmark for similar Miele markets."
+              summary="TBD"
               squareImages={[{ src: squareOne }, { src: squareTwo }]}
               wideImages={[{ src: wideOne }, { src: wideTwo }]}
             />
           </div>
 
           <div class="case-study-right-pane min-w-0">
-            <CaseStudyShout>
-              Mapped Miele Australia's full technology landscape ahead of the global SAP S/4HANA transition, winning
-              approval for a market-specific implementation now benchmarking similar Miele markets.
-            </CaseStudyShout>
+            <CaseStudyShout>TBD</CaseStudyShout>
 
             <CaseStudySectionText title="The client" noTopMargin={true}>
               <p class="">
-                Miele Australia is the local arm of Miele, the German manufacturer known for premium white goods and
-                kitchen equipment built to last decades. Unusually within the global Miele network, the Australian
-                business runs both a B2C and a B2B model, where the vast majority of Miele markets are B2B only. That
-                dual operating model means Miele Australia carries a much larger customer base, more sensitive customer
-                data, and more integrated systems than the rest of the group.
+                Dare Iced Coffee, owned by Bega, is one of Australia's most recognised iced coffee brands and a
+                fridge-door staple for millions of Australians. From tradies grabbing one on the way to site to families
+                picking up a multipack at the supermarket, Dare has earned its place in Australian culture through
+                decades of bold branding and consistent product quality.
               </p>
             </CaseStudySectionText>
 
             <CaseStudySectionText title="The problem">
               <p>
-                Miele globally was moving from a patchwork of legacy ERPs to SAP S/4HANA, and Miele Australia was one of
-                the very first markets in the world to make the transition. Global was working from a single blueprint
-                built around the typical Miele B2B market, which looked nothing like the Australian reality. Miele
-                Australia's reporting stack runs the business day-to-day, and applying the global blueprint as-is would
-                have meant key reports could no longer be produced, with operations grinding to a halt as a result. With
-                two other Miele markets watching Australia as the benchmark for their own transitions, the stakes
-                weren't just local.
+                Despite strong brand recognition in the real world, Dare's digital presence hadn't kept pace. The
+                existing website was dated, difficult to navigate, and not something the team felt confident linking to
+                when running promotions, competitions, or advertising campaigns. For a brand that regularly drives
+                traffic through above-the-line marketing, the website was the weak link: the place where momentum
+                stalled rather than converted into engagement.
               </p>
             </CaseStudySectionText>
 
             <CaseStudySectionText title="The approach">
               <p>
-                Pixel was brought in as a partner alongside another consultancy to advise Miele Australia on how to
-                actually carry out the transition. The first thing that became clear was sobering: between the age of
-                the systems and the number of moving parts, no one inside the business had a complete technical picture.
-                Before we could advise on anything, we had to build that picture from the ground up. We worked across
-                the full OSI model, mapping the entire network, data centres, systems, integrations, data warehouses,
-                printers, and reports, identifying what was in active use, what had been orphaned, what needed patching,
-                and who owned each piece.
+                We started with a discovery phase and market research to understand how Dare's audience interacted with
+                the brand online: what they were looking for, where they were dropping off, and what the website needed
+                to do beyond simply existing. That research shaped everything that followed.
               </p>
             </CaseStudySectionText>
 
             <CaseStudySectionText title="The solution">
               <p>
-                Out of that mapping came a documented understanding of how Miele Australia actually runs, and where the
-                gaps would open up if the global SAP S/4HANA blueprint were applied without adaptation. We mapped each
-                existing system to its SAP equivalent, called out where market-specific customisation would be required,
-                and built the case Miele global needed to see. Along the way, we identified a long-standing data
-                fragmentation issue: customer information lived across multiple CRMs and marketing tools that didn't
-                cleanly talk to the source of truth, which had been quietly causing problems like opted-out customers
-                still receiving marketing. We provided a solution plan to resolve it as part of the broader transition.
+                Working within Dare's strict brand guidelines, and navigating a challenging set of existing assets, we
+                designed and built a WordPress website that matched the energy of the brand itself. The solution had two
+                clear goals: a bold, engaging experience for Dare's audience, and a practical content management system
+                that gave the internal team real control over their digital presence.
+              </p><br />
+              <p>
+                Beyond the initial redesign, we built dedicated web pages for promotions and competitions as they
+                launched, kept the site updated with fresh content, and upskilled the Dare team so they could handle
+                day-to-day content updates independently. What started as a website project became an ongoing digital
+                partnership that ran for several years.
               </p>
             </CaseStudySectionText>
 
             <CaseStudySectionText title="The results">
-              <p>
-                Phase one delivered the strategic outcome that mattered most: Miele Australia made the case that a
-                one-size-fits-all SAP rollout wouldn't work for its market, and global agreed.
-              </p>
+              <p>The impact on Dare's digital presence was significant:</p>
               <CaseStudyResults
                 results={[
                   {
-                    title: 'Complete documentation',
-                    description: "of Miele Australia's technology and data landscape",
+                    title: '200%+ increase in average time on site',
+                    description: 'visitors were engaging with the brand rather than bouncing',
                     backgroundColour: 'pixel-solar'
                   },
                   {
-                    title: 'A full mapping',
-                    description: 'of legacy systems to SAP S/4HANA, with gaps identified',
+                    title: '18% reduction in support enquiries',
+                    description: 'new site structure helped people find what they needed',
                     backgroundColour: 'pixel-celestial'
                   },
                   {
-                    title: 'A solution plan',
-                    description:
-                      'to consolidate fragmented customer data and stop opted-out customers receiving marketing material',
+                    title: 'Proud digital presence',
+                    description: 'that the team could confidently showcase',
                     backgroundColour: 'pixel-rosy'
                   },
                   {
-                    title: 'Accepted case by Miele global',
-                    description: 'opening the door to market-specific customisation',
+                    title: 'Full content independence',
+                    description: 'for the internal team on day-to-day updates',
                     backgroundColour: 'pixel-teal'
-                  },
-                  {
-                    title: 'A framework',
-                    description: 'informing the two other Miele markets with similar B2C/B2B operating models',
-                    backgroundColour: 'pixel-fawn'
-                  },
-                  {
-                    title: 'Signed off implementation plan',
-                    description: 'awaiting budget for the build phase',
-                    backgroundColour: 'pixel-poppy'
                   }
                 ]}
               />
@@ -146,14 +126,16 @@ const { previous, next } = getCaseStudyNav('miele')
               <div class="mt-6 lg:mt-12"></div>
 
               <CaseStudyShout>
-                Before you can move a business to a new platform, you have to know what you're actually moving.
+                For a consumer brand that drives traffic through national campaigns, a website that converts attention
+                into engagement isn't a nice-to-have. It's the difference between a campaign that lands and one that
+                doesn't.
               </CaseStudyShout>
             </CaseStudySectionText>
 
             <CaseStudyMetaData
-              client={{ name: 'Miele', url: 'https://www.miele.com.au/' }}
-              industry={['Home Appliances']}
-              serviceNames={['Consulting']}
+              client={{ name: 'Dare Iced Coffee', url: 'https://dareicedcoffee.com.au/' }}
+              industry={['Food & Beverage']}
+              serviceNames={['Discovery + direction', 'Design', 'Development']}
             />
           </div>
         </div>
@@ -166,7 +148,7 @@ const { previous, next } = getCaseStudyNav('miele')
     <ContactForm
       title="Discuss a similar challenge"
       displayDescription={false}
-      caller={SitePage.CASE_STUDIES_PRIVATE_MIELE}
+      caller={SitePage.CASE_STUDIES_PRIVATE_DARE}
     />
   </article>
 

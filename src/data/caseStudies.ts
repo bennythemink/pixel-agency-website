@@ -73,7 +73,7 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: 'Dare Iced Coffee',
-    slug: 'dare',
+    slug: 'dare-iced-coffee-website-redesign-reduced-costs',
     industry: ['Food & Beverage'],
     services: ['Discovery + direction', 'Design', 'Development'],
     overview:
@@ -179,7 +179,7 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: 'Farmers Union Greek Style Yogurt',
-    slug: 'farmers',
+    slug: 'farmers-union-greek-style-yogurt-website-redesign',
     industry: ['Food & Beverage'],
     services: ['Discovery + direction', 'Design', 'Development'],
     overview:
@@ -254,7 +254,7 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: 'Jamala Properties',
-    slug: 'jamala',
+    slug: 'jamala-properties-successful-market-test',
     industry: ['Construction'],
     services: ['Discovery + direction', 'Design', 'Development'],
     overview:
@@ -269,7 +269,7 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: 'Miele Australia',
-    slug: 'miele',
+    slug: 'miele-successful-plan-to-move-erp',
     industry: ['Home Appliances'],
     services: ['Consulting'],
     overview:
@@ -344,7 +344,7 @@ const caseStudies: CaseStudy[] = [
   },
   {
     title: 'Fort Knox Self Storage',
-    slug: 'fort-knox',
+    slug: 'fort-knox-self-storage-real-time-booking',
     industry: ['Self Storage'],
     services: ['Discovery + direction', 'Design', 'Development', 'Consulting'],
     overview: 'TBD',
