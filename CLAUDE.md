@@ -278,6 +278,11 @@ entries. Put domain redirects before path-specific ones so alternative hosts nor
 canonical domain first. Verify with `curl -sI https://<new-domain>/about` — it must be a 3xx,
 never a 200.
 
+**A host redirect needs two rules, not one.** Vercel's `/:path*` does not match the root path,
+so a host needs an explicit `"source": "/"` rule alongside its `/:path*` rule or the homepage
+keeps serving a duplicate while every other page redirects correctly. Always verify the root
+separately: `curl -sI https://<domain>/`.
+
 ### Orphan pages
 
 A page with no inbound internal links is reachable only via the sitemap, and Google
