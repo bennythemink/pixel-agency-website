@@ -93,6 +93,31 @@
       "source": "/consulting",
       "destination": "/services/consulting",
       "permanent": true
+    },
+    {
+      "source": "/case-studies/private/dare",
+      "destination": "/case-studies/private/dare-iced-coffee-website-redesign-reduced-costs",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/farmers",
+      "destination": "/case-studies/private/farmers-union-greek-style-yogurt-website-redesign",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/fort-knox",
+      "destination": "/case-studies/private/fort-knox-self-storage-real-time-booking",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/jamala",
+      "destination": "/case-studies/private/jamala-properties-successful-market-test",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/miele",
+      "destination": "/case-studies/private/miele-successful-plan-to-move-erp",
+      "permanent": true
     }
   ]
 }
