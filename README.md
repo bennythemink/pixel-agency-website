@@ -1,6 +1,9 @@
+# Pixel Agency Website
+
 This project is the Pixel Agency website — [pixelagency.com.au](https://www.pixelagency.com.au).
 
-# Astro Starter Kit: Basics
+Built with Astro, deployed on Vercel. For a fuller tour of the codebase - content systems,
+colour tokens, routing conventions, the flow-field background - see [CLAUDE.md](./CLAUDE.md).
 
 ## Integrations
 
@@ -14,25 +17,26 @@ All are installed locally and not via CDN.
 
 ## 🚀 Project Structure
 
-Inside of your Astro project, you'll see the following folders and files:
-
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+├── public/              # Served as-is: favicons, client logos, robots.txt
+├── src/
+│   ├── assets/          # Images processed at build (case studies, services)
+│   ├── components/      # Astro components, grouped by area
+│   ├── config/          # colours.ts (brand palette), site.ts (contact constants)
+│   ├── data/            # caseStudies.ts, insights.ts, and the okf/ knowledge bundle
+│   ├── layouts/         # Layout.astro - SEO, fonts, analytics, menu, footer
+│   ├── pages/           # File-based routes
+│   ├── scripts/         # flow-field.ts - animated canvas background
+│   ├── styles/          # global.css - CSS custom properties + Tailwind base
+│   └── types/
+├── astro.config.mjs     # Site URL, trailingSlash, fonts, sitemap, Partytown
+├── vercel.json          # Domain redirects + trailing-slash policy
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+[CLAUDE.md](./CLAUDE.md) documents this in more detail, including the path aliases
+(`@components`, `@data`, `@layouts`, ...) and the content systems.
 
 ## 🧞 Commands
 
@@ -85,7 +89,7 @@ For SEO purposes not all case studies are published on site launch. It is better
 1. Move the case study to publish from the 'pages/case-studies/private' folder into its parent folder.
 2. Open the case study page and remove the 'published={false}' from the Layout component.
 3. Open the 'caseStudies.ts' file, find the case study in the caseStudies array, change its 'published' property to true.
-4. Push to main + remote
+4. Commit on a new branch, open a pull request, and merge it. Do not commit directly to `main`.
 
 ## Moving To Production
 
