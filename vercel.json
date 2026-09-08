@@ -46,6 +46,28 @@
       "permanent": true
     },
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.pixeleducation.com.au"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "pixeleducation.com.au"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
