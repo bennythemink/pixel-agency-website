@@ -7,7 +7,9 @@
 ## Project
 
 **pixelagency.com.au** — company website for Pixel Agency, an Australian digital agency.  
-Secondary domain: **pixelassist.ai** — redirects to `/pixel-assist` via Vercel.
+Alternative domains, both redirected to the canonical domain in `vercel.json`:
+**pixelassist.ai** (root → `/pixel-assist`, other paths → their pixelagency equivalent) and
+**pixeleducation.com.au** (all paths → their pixelagency equivalent).
 
 ---
 
@@ -259,6 +261,22 @@ the site twice over (this caused 25 "Alternative page with proper canonical tag"
 in Search Console). If you ever switch hosts, re-establish the redirect on the new host.
 
 Always write internal links without a trailing slash.
+
+### One site, one domain
+
+`pixelagency.com.au` is the only domain that should serve content. The others are alternative
+domains and must 301 to it, or they silently duplicate the entire site.
+
+This is not theoretical: `pixeleducation.com.au` was attached to the Vercel project with no
+redirect rule and served every page at 200. The canonical tags pointed home so rankings were
+safe, but Google crawled the whole site twice — and actually discovered at least one insight
+via `pixeleducation.com.au` rather than via `pixelagency.com.au`.
+
+Attaching a new domain to this project therefore has a required second step: add a host-based
+redirect to `vercel.json`, matching the existing `pixelassist.ai` / `pixeleducation.com.au`
+entries. Put domain redirects before path-specific ones so alternative hosts normalise to the
+canonical domain first. Verify with `curl -sI https://<new-domain>/about` — it must be a 3xx,
+never a 200.
 
 ### Orphan pages
 

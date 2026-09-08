@@ -2,52 +2,74 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.pixelassist.ai"
+        }
+      ],
+      "destination": "/pixel-assist",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "pixelassist.ai"
+        }
+      ],
+      "destination": "/pixel-assist",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.pixelassist.ai"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "pixelassist.ai"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.pixeleducation.com.au"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "pixeleducation.com.au"
+        }
+      ],
+      "destination": "https://www.pixelagency.com.au/:path*",
+      "permanent": true
+    },
+    {
       "source": "/consulting",
       "destination": "/services/consulting",
-      "permanent": true
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.pixelassist.ai"
-        }
-      ],
-      "destination": "/pixel-assist",
-      "permanent": true
-    },
-    {
-      "source": "/",
-      "has": [
-        {
-          "type": "host",
-          "value": "pixelassist.ai"
-        }
-      ],
-      "destination": "/pixel-assist",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.pixelassist.ai"
-        }
-      ],
-      "destination": "https://www.pixelagency.com.au/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "pixelassist.ai"
-        }
-      ],
-      "destination": "https://www.pixelagency.com.au/:path*",
       "permanent": true
     }
   ]
