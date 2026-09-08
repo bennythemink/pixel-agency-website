@@ -189,6 +189,12 @@ published?: boolean      // false adds noindex/nofollow meta
 - Place in `case-studies/private/` or `insights/private/`
 - Pass `published={false}` to `<Layout>` for noindex
 - Sitemap filter excludes `/case-studies/private/`
+- Renaming one breaks any link already shared with a client. Add a redirect from the old path
+  to the new one in `vercel.json` — these pages are unlisted and reached by direct link, so the
+  old URL is somebody's bookmark, not just a search result.
+- Keep the `slug` in `caseStudies.ts`, the `getCaseStudyNav()` argument, and the
+  `analyticsCaller.ts` enum value in step with the filename. The enum value is what form
+  submissions are attributed to, so a stale one silently misreports.
 
 ---
 
