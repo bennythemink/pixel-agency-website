@@ -1,3 +1,5 @@
+This project is the Pixel Agency website — [pixelagency.com.au](https://www.pixelagency.com.au).
+
 # Astro Starter Kit: Basics
 
 ## Integrations
