@@ -5,4 +5,3 @@
 * [Website & Application Development](/services/development.md) - Websites, applications, and custom systems built in-house.
 * [AI Strategy & Implementation](/services/ai.md) - AI strategy, custom tools, and workflow automation.
 * [Digital Consulting & Virtual CTO](/services/consulting.md) - Senior digital consulting, virtual CTO, and delivery oversight.
-* [Education Resources + Consulting](/services/education.md) - Compliant learning material and education strategy for RTOs and TAFEs.

@@ -1,5 +1,11 @@
 {
+  "trailingSlash": false,
   "redirects": [
+    {
+      "source": "/consulting",
+      "destination": "/services/consulting",
+      "permanent": true
+    },
     {
       "source": "/",
       "has": [

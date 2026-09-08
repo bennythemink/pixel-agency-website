@@ -1,7 +1,7 @@
 ---
 type: 'Insight'
 title: 'What a Good Brief Looks Like'
-description: 'What to know what to include in a project brief?'
+description: 'What to include in a project brief, and what can safely wait for discovery.'
 resource: 'https://www.pixelagency.com.au/insights/what-a-good-brief-looks-like'
 tags: ['Discovery']
 timestamp: '2026-06-07T00:00:00Z'

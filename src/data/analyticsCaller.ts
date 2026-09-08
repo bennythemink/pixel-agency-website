@@ -15,7 +15,6 @@ export enum SitePage {
   SERVICES_DESIGN = '/services/design',
   SERVICES_DEVELOPMENT = '/services/development',
   SERVICES_DISCOVERY = '/services/discovery',
-  SERVICES_EDUCATION = '/services/education',
   CASE_STUDIES = '/case-studies',
   CASE_STUDIES_BAWBAW = '/case-studies/bawbaw',
   CASE_STUDIES_BHN = '/case-studies/bhn',

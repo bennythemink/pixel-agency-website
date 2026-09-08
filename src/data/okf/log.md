@@ -1,3 +1,16 @@
+# 2026-09-08
+
+**Update** - Added concept files for the 16 Insights published since the initial bundle, bringing the Insights
+section in line with the 28 currently published on the site. Rebuilt insights/index.md from the note frontmatter,
+sorted newest-first, so the index cannot drift from the notes again.
+
+**Creation** - Added case-studies/pfg.md for the PFG Australia case study, and listed it in case-studies/index.md.
+
+**Removal** - Removed services/education.md and its entry in services/index.md. The Education service has been
+retired and the page removed from the website.
+
+**Fix** - Corrected the garbled description on insights/what-a-good-brief-looks-like.md.
+
 # 2026-07-06
 
 **Update** - Split contact details out of company/about.md into a new company/contact.md concept file.

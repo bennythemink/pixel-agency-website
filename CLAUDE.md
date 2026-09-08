@@ -92,8 +92,7 @@ src/
 │       ├── consulting.astro
 │       ├── design.astro
 │       ├── development.astro
-│       ├── discovery.astro
-│       └── education.astro
+│       └── discovery.astro
 ├── scripts/
 │   └── flow-field.ts            # Custom animated canvas background (zero deps, ~3KB)
 ├── styles/
@@ -123,7 +122,7 @@ src/
 
 The single source of truth for all case study content and metadata. No CMS or content collections — everything is TypeScript.
 
-**Total:** 22 entries | **Published:** 13 | **Private/unlisted:** 9
+**Total:** 22 entries | **Published:** 14 | **Private/unlisted:** 8
 
 **Key fields on `CaseStudy`:**
 - `title`, `slug`, `industry[]`, `services[]`, `overview`
@@ -142,7 +141,7 @@ The single source of truth for all case study content and metadata. No CMS or co
 - `resolveColour(colour)` — converts bg class or hex to `{ class? } | { style? }`
 
 **Published case studies (slugs):**
-`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `holmesglen`, `insulation`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
+`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `holmesglen`, `insulation`, `pfg`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
 
 **Asset convention per case study:** `src/assets/case-studies/<slug>/`
 - `tile.webp` — card/listing thumbnail
@@ -155,7 +154,7 @@ The single source of truth for all case study content and metadata. No CMS or co
 
 ### Insights (`src/data/insights.ts`)
 
-**Total:** 11 entries, all published. Sorted newest-first.
+**Total:** 28 entries, all published. Sorted newest-first.
 
 **Key fields on `Insight`:**
 - `title`, `slug`, `summary`, `publishedAt` (ISO date), `dateLabel` (display string)
@@ -168,18 +167,8 @@ The single source of truth for all case study content and metadata. No CMS or co
 - `featuredInsights` — published + featured
 - `getInsightNav(slug)` — returns `{ previous?, current, next? }`
 
-**Current published insights (newest first):**
-1. Lets Derisk Your Project Delivery
-2. Open Knowledge Format
-3. Why You Should Consider Using Your Own AI Model
-4. Does AI Have a Sustainable Business Model?
-5. How To Evaluate The Technology Your Agency Recommends
-6. What Good Communication Looks Like On A Digital Project
-7. How To Manage Multiple Agencies Working On The Same Project
-8. What a Good Brief Looks Like
-9. What About Off-shoring?
-10. What a Discovery Phase Looks Like
-11. Why and When To Do A Discovery Phase
+**Insight titles are not listed here** — the set changes too often to keep in sync.
+Read `src/data/insights.ts` (sorted newest-first) for the current list.
 
 ---
 
@@ -253,6 +242,32 @@ Brand tokens: `pixel-platinum`, `pixel-rosy`, `pixel-lte-rosy`, `pixel-teal`, `p
 - City landing pages target major Australian cities
 - Sitemap generated at build; private case studies excluded
 
+### URL convention — no trailing slash
+
+Every page has exactly one canonical URL, without a trailing slash (`/about`, not `/about/`).
+Three settings have to agree, and they are enforced in different places:
+
+| Setting | Where | Effect |
+|---|---|---|
+| `trailingSlash: 'never'` | `astro.config.mjs` | dev server + sitemap `<loc>` values |
+| `build.format` (unset → `directory`) | `astro.config.mjs` | emits `dist/about/index.html` |
+| `"trailingSlash": false` | `vercel.json` | **production** — 308-redirects `/about/` → `/about` |
+
+The Astro setting alone is **not** enough. It does not affect what Vercel serves, so
+without the `vercel.json` key both `/about` and `/about/` return 200 and Google indexes
+the site twice over (this caused 25 "Alternative page with proper canonical tag" entries
+in Search Console). If you ever switch hosts, re-establish the redirect on the new host.
+
+Always write internal links without a trailing slash.
+
+### Orphan pages
+
+A page with no inbound internal links is reachable only via the sitemap, and Google
+deprioritises those heavily — `/services/education` sat uncrawled for months this way
+before being removed. When adding a page, link it from somewhere real (nav, a listing
+page, or body copy); if nothing should link to it, it probably belongs in a `private/`
+directory with `published={false}` instead.
+
 ---
 
 ## Adding New Content
@@ -286,4 +301,4 @@ When opening a PR that changes any of the following, update this file as part of
 
 ---
 
-*Last updated: 2026-07-21*
+*Last updated: 2026-09-08*

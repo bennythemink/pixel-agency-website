@@ -126,7 +126,7 @@ const caseStudies: CaseStudy[] = [
     colour: 'bg-pixel-solar',
     image: holmesglen,
     drawerImage: holmesglenDrawer,
-    published: false,
+    published: true,
     featured: false,
     imagePosition: 'object-top',
     drawerPosition: 'object-[0%_0%]',

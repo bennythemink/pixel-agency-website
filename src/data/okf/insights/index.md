@@ -1,14 +1,30 @@
 # Insights
 
-* [How To Protect Your Business In Case Your Agency Closes](/insights/how-to-protect-your-business-in-case-your-agency-closes.md) - Steps to protect hosting, domain, plugin licences, and code if your agency closes.
-* [Lets Derisk Your Project Delivery](/insights/lets-derisk-your-project-delivery.md) - A clear process, a good brief, and a well-defined scope de-risk project delivery.
-* [Open Knowledge Format](/insights/open-knowledge-format-a-format-for-company-knowledge-that-your-team-and-your-ai-can-both-use.md) - A new open standard for storing company knowledge for teams and AI systems.
+* [Does Your Project Qualify For The R&D Tax Incentive?](/insights/does-your-project-qualify-for-the-r-and-d-tax-incentive.md) - A self-test for whether a software project has a legitimate R&D Tax Incentive claim. Not tax advice.
+* [What Are The Essential Steps To Launch A Small Business Website?](/insights/what-are-the-essential-steps-to-launch-a-small-business-website.md) - The steps most people skip when launching a small business website, and why the marketing plan matters most.
+* [What Data Privacy Rules Actually Apply To My Business Website In Australia?](/insights/what-data-privacy-rules-actually-apply-to-my-business-website-in-australia.md) - When the Privacy Act applies to an Australian business website, and what is changing. General information, not legal advice.
+* [What Is AEO, And Is It Replacing SEO?](/insights/what-is-aeo-and-is-it-replacing-seo.md) - What Answer Engine Optimization is, how it differs from SEO, and why the two now work together.
+* [How Do I Migrate My Website To A New Agency Without Losing Everything?](/insights/how-do-i-migrate-my-website-to-a-new-agency-without-losing-everything.md) - What to secure before switching web agencies so nothing is lost or broken in the handover.
+* [What Is A Headless CMS, And Do I Actually Need One?](/insights/what-is-a-headless-cms-and-do-i-actually-need-one.md) - What a headless CMS actually is, and when the extra cost and complexity is justified.
+* [Can I Build My Website Myself With Wix Or Squarespace, Or Do I Need A Developer?](/insights/can-i-build-my-website-myself-with-wix-or-squarespace-or-do-i-need-a-developer.md) - When a DIY website builder is genuinely the right call, and when it starts costing more than it saves.
+* [Do I Need A Mobile App Or Is A Mobile-Friendly Website Enough?](/insights/do-i-need-a-mobile-app-or-is-a-mobile-friendly-website-enough.md) - A decision framework for native app versus mobile-friendly website, and where a PWA sits between them.
+* [Questions To Ask Before You Hire A Digital Agency](/insights/questions-to-ask-before-you-hire-a-digital-agency.md) - The questions that surface risk before you sign anything with an agency or developer.
+* [How Much Does A Website Or App Actually Cost In Australia?](/insights/how-much-does-a-website-or-app-actually-cost-in-australia.md) - Real build price ranges for websites and apps in Australia, plus the ongoing costs that follow launch.
+* [Signs Your Website Needs A Redesign](/insights/signs-your-website-needs-a-redesign.md) - The recognisable signals that a website has stopped doing its job.
+* [How A Good AI Development Process Actually Works](/insights/how-a-good-ai-development-process-actually-works.md) - Why AI-assisted development needs a real process, and the skill-driven cycle Pixel Agency uses.
+* [When Should You Rebuild Your Website?](/insights/when-should-you-rebuild-your-website.md) - How to tell whether a website problem needs a full rebuild or something more targeted.
+* [What Happens When Your AI Actually Knows Your Business](/insights/what-happens-when-your-ai-actually-knows-your-business.md) - What changes when an AI can query your own accumulated business knowledge rather than starting from zero.
+* [POC vs MVP: What They Are and When to Use Them](/insights/poc-vs-mvp-what-they-are-and-when-to-use-them.md) - What a proof of concept and a minimum viable product each are, when to use them, and how feature creep ruins both.
+* [When Should You Deploy AI In Your Business](/insights/when-should-you-deploy-ai-in-your-business.md) - The eight problem patterns where AI is genuinely a good fit for small and medium businesses.
+* [How To Protect Your Business In Case Your Agency Closes](/insights/how-to-protect-your-business-in-case-your-agency-closes.md) - Practical steps to protect your hosting, domain, plugin licences, and agency relationship if your agency shuts down.
+* [Lets Derisk Your Project Delivery](/insights/lets-derisk-your-project-delivery.md) - A clear process, a good brief, and a well-defined scope are the best ways to derisk your project delivery.
+* [Open Knowledge Format: A Format For Company Knowledge That Your Team And Your AI Can Both Use](/insights/open-knowledge-format-a-format-for-company-knowledge-that-your-team-and-your-ai-can-both-use.md) - A new open standard for storing company knowledge in a format that works for your team today and your AI systems tomorrow.
 * [Why You Should Consider Using Your Own AI Model](/insights/why-you-should-consider-using-your-own-ai-model.md) - The case for self-hosting AI models instead of relying on third-party APIs.
-* [Does AI Have a Sustainable Business Model?](/insights/does-ai-have-a-sustainable-business-model.md) - A short take on the economics of AI business models.
-* [How To Evaluate The Technology Your Agency Recommends](/insights/how-to-evaluate-the-technology-your-agency-recommends.md) - Questions non-technical clients can ask before committing to a tech stack.
-* [What Good Communication Looks Like On A Digital Project](/insights/what-good-communication-looks-like-on-a-digital-project.md) - How documentation, stage gates, and updates keep projects on track.
-* [How To Manage Multiple Agencies Working On The Same Project](/insights/how-to-manage-multiple-agencies-working-on-the-same-project.md) - Coordinating multiple agencies on one project.
-* [What a Good Brief Looks Like](/insights/what-a-good-brief-looks-like.md) - What to include in a project brief.
-* [What About Off-shoring?](/insights/what-about-off-shoring.md) - Considerations and challenges when off-shoring a project.
-* [What a Discovery Phase Looks Like](/insights/what-a-discovery-phase-looks-like.md) - What is typically involved in a Discovery phase.
-* [Why and When To Do A Discovery Phase](/insights/why-and-when-to-do-a-discovery-phase.md) - The purpose of a Discovery phase and when it is needed.
+* [Does AI Have a Sustainable Business Model?](/insights/does-ai-have-a-sustainable-business-model.md) - No. And we tell you why.
+* [What Good Communication Looks Like On A Digital Project](/insights/what-good-communication-looks-like-on-a-digital-project.md) - How clear documentation, stage gates, and proactive updates keep digital projects on track.
+* [How To Evaluate The Technology Your Agency Recommends](/insights/how-to-evaluate-the-technology-your-agency-recommends.md) - Practical questions non-technical clients can ask before committing to a proposed tech stack.
+* [What About Off-shoring?](/insights/what-about-off-shoring.md) - What are the considerations and potential challenges when off-shoring a project?
+* [What a Good Brief Looks Like](/insights/what-a-good-brief-looks-like.md) - What to include in a project brief, and what can safely wait for discovery.
+* [How To Manage Multiple Agencies Working On The Same Project](/insights/how-to-manage-multiple-agencies-working-on-the-same-project.md) - How to coordinate and manage multiple agencies working on the same project to ensure a successful outcome.
+* [Why and When To Do A Discovery Phase](/insights/why-and-when-to-do-a-discovery-phase.md) - What is its purpose, what does it involve, and how can it help ensure the success of your project.
+* [What a Discovery Phase Looks Like](/insights/what-a-discovery-phase-looks-like.md) - What is typically involved in a Discovery phase, and what you should expect to receive at the end of it.

@@ -13,3 +13,4 @@
 * [Fletcher Insulation Digital Asset Management Platform](/case-studies/fletcher-dam.md) - Custom DAM platform for Fletcher Insulation.
 * [Pixel Assist](/case-studies/pixel-assist.md) - AI knowledge assistant deployed for a manufacturing client.
 * [Risk Calculator](/case-studies/ai-risk-calculator.md) - Custom AI-powered risk calculator for a manufacturing client.
+* [PFG Australia](/case-studies/pfg.md) - Multi-brand restructure for Australia's largest independent agricultural machinery distributor.
