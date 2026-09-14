@@ -356,6 +356,18 @@ const insights: Insight[] = [
     featured: false,
     tags: ['AI', 'Consulting', 'Digital Strategy'],
     colour: 'pixel-teal'
+  },
+  {
+    title: 'Web Consultant Versus In-House Developer: The Trade-Offs For Australian Businesses',
+    publishedAt: '2026-09-14',
+    dateLabel: '14th September, 2026',
+    summary:
+      'When it makes sense to hire a developer in-house, when it does not, and the costs on both sides that businesses forget to count.',
+    slug: 'web-consultant-versus-in-house-developer-the-trade-offs-for-australian-businesses',
+    published: true,
+    featured: false,
+    tags: ['Digital Strategy'],
+    colour: 'pixel-fire'
   }
 ]
 
