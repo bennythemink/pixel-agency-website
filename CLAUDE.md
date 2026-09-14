@@ -23,7 +23,7 @@ Alternative domains, both redirected to the canonical domain in `vercel.json`:
 | Lenis | ^1.3 | Smooth scrolling |
 | TypeScript | strict | All source files |
 | Partytown | ^2.1 | Offloads GTM + other third-party scripts to web workers |
-| @astrojs/sitemap | ^3.7 | Auto-generates `/sitemap-index.xml` (filters out `/case-studies/private/`) |
+| @astrojs/sitemap | ^3.7 | Auto-generates `/sitemap-index.xml` (filters out `/case-studies/private/` and `/insights/private/`) |
 
 **Node:** `>=22.12.0`  
 **Deploy:** Vercel (`vercel.json` at root)  
@@ -87,7 +87,7 @@ src/
 │   ├── insights/
 │   │   ├── index.astro          # Insights listing
 │   │   ├── <slug>.astro         # Published insight pages
-│   │   └── private/             # Unlisted insights
+│   │   └── private/             # Unlisted insights (excluded from sitemap, noindex)
 │   └── services/
 │       ├── index.astro
 │       ├── ai.astro
@@ -188,7 +188,7 @@ published?: boolean      // false adds noindex/nofollow meta
 ### Private pages
 - Place in `case-studies/private/` or `insights/private/`
 - Pass `published={false}` to `<Layout>` for noindex
-- Sitemap filter excludes `/case-studies/private/`
+- Sitemap filter excludes `/case-studies/private/` and `/insights/private/`
 - Renaming one breaks any link already shared with a client. Add a redirect from the old path
   to the new one in `vercel.json` — these pages are unlisted and reached by direct link, so the
   old URL is somebody's bookmark, not just a search result.
@@ -248,7 +248,7 @@ Brand tokens: `pixel-platinum`, `pixel-rosy`, `pixel-lte-rosy`, `pixel-teal`, `p
 - Canonical URLs: auto-generated from `Astro.site` + `Astro.url.pathname`
 - JSON-LD `ProfessionalService` schema in `Layout.astro` (address: 1 Collins St Melbourne VIC 3000)
 - City landing pages target major Australian cities
-- Sitemap generated at build; private case studies excluded
+- Sitemap generated at build; private case studies and insights excluded
 
 ### URL convention — no trailing slash
 
@@ -330,4 +330,4 @@ When opening a PR that changes any of the following, update this file as part of
 
 ---
 
-*Last updated: 2026-09-08*
+*Last updated: 2026-09-14*
