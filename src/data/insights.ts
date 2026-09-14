@@ -344,6 +344,18 @@ const insights: Insight[] = [
     featured: false,
     tags: ['Business', 'Marketing'],
     colour: 'pixel-rosy'
+  },
+  {
+    title: 'How To Choose An AI Consulting Service For Small Businesses',
+    publishedAt: '2026-09-14',
+    dateLabel: '14th September, 2026',
+    summary:
+      'What to look for when hiring an AI consultant, and the questions that separate people who advise from people who sell.',
+    slug: 'how-to-choose-an-ai-consulting-service-for-small-businesses',
+    published: true,
+    featured: false,
+    tags: ['AI', 'Consulting', 'Digital Strategy'],
+    colour: 'pixel-teal'
   }
 ]
 
