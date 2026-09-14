@@ -33,7 +33,7 @@ export default defineConfig({
 
   integrations: [
     sitemap({
-      filter: (page) => !page.includes('/case-studies/private/')
+      filter: (page) => !page.includes('/case-studies/private/') && !page.includes('/insights/private/')
     }),
     partytown({
       config: {
