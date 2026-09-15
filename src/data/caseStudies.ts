@@ -126,7 +126,10 @@ const caseStudies: CaseStudy[] = [
     colour: 'bg-pixel-solar',
     image: holmesglen,
     drawerImage: holmesglenDrawer,
-    published: true,
+    // Temporarily unpublished (2026-09-15). To restore: set true, rename
+    // src/pages/case-studies/_holmesglen.astro back to holmesglen.astro, and
+    // remove the /case-studies/holmesglen redirect from vercel.json.
+    published: false,
     featured: false,
     imagePosition: 'object-top',
     drawerPosition: 'object-[0%_0%]',
