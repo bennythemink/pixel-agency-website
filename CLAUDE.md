@@ -124,7 +124,7 @@ src/
 
 The single source of truth for all case study content and metadata. No CMS or content collections — everything is TypeScript.
 
-**Total:** 22 entries | **Published:** 14 | **Private/unlisted:** 8
+**Total:** 22 entries | **Published:** 13 | **Private/unlisted:** 9
 
 **Key fields on `CaseStudy`:**
 - `title`, `slug`, `industry[]`, `services[]`, `overview`
@@ -143,7 +143,11 @@ The single source of truth for all case study content and metadata. No CMS or co
 - `resolveColour(colour)` — converts bg class or hex to `{ class? } | { style? }`
 
 **Published case studies (slugs):**
-`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `holmesglen`, `insulation`, `pfg`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
+`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `insulation`, `pfg`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
+
+**Temporarily unpublished:** `holmesglen` (since 2026-09-15). The entry has `published: false`, the page
+is renamed to `_holmesglen.astro` so Astro skips it, and `vercel.json` has a non-permanent redirect
+from `/case-studies/holmesglen` to `/case-studies`. Reverse all three to restore it.
 
 **Asset convention per case study:** `src/assets/case-studies/<slug>/`
 - `tile.webp` — card/listing thumbnail
@@ -156,7 +160,7 @@ The single source of truth for all case study content and metadata. No CMS or co
 
 ### Insights (`src/data/insights.ts`)
 
-**Total:** 28 entries, all published. Sorted newest-first.
+**Total:** 30 entries, all published. Sorted newest-first.
 
 **Key fields on `Insight`:**
 - `title`, `slug`, `summary`, `publishedAt` (ISO date), `dateLabel` (display string)
@@ -330,4 +334,4 @@ When opening a PR that changes any of the following, update this file as part of
 
 ---
 
-*Last updated: 2026-09-14*
+*Last updated: 2026-09-15*

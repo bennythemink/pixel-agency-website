@@ -90,6 +90,11 @@
       "permanent": true
     },
     {
+      "source": "/case-studies/holmesglen",
+      "destination": "/case-studies",
+      "permanent": false
+    },
+    {
       "source": "/consulting",
       "destination": "/services/consulting",
       "permanent": true
