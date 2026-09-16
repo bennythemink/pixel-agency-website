@@ -24,6 +24,7 @@ import pixelAssist from '@assets/case-studies/pixel-assist/tile.webp'
 import bhnDrawer from '@assets/case-studies/bhn/drawer.webp'
 import yoplaitDrawer from '@assets/case-studies/yoplait/drawer.webp'
 import insulationDrawer from '@assets/case-studies/insulation/drawer.webp'
+import mieleDrawer from '@assets/case-studies/miele/drawer.webp'
 import holmesglenDrawer from '@assets/case-studies/holmesglen/drawer.svg'
 
 import type { ImageMetadata } from 'astro'
@@ -279,10 +280,11 @@ const caseStudies: CaseStudy[] = [
       'Digital consulting and strategy for Miele Australia in the domestic and commercial appliances sector. Pixel Agency mapped its technology landscape ahead of the global SAP S/4HANA transition, securing a market-specific implementation that now benchmarks similar Miele markets.',
     colour: 'bg-pixel-poppy',
     image: miele,
+    drawerImage: mieleDrawer,
     published: true,
     featured: true,
     imagePosition: 'object-top',
-    drawerPosition: 'object-top',
+    drawerPosition: 'object-[0%_0%]',
     imageAltText: 'Miele Australia consulting case study'
   },
   {
