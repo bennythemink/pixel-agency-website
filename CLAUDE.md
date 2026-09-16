@@ -124,7 +124,7 @@ src/
 
 The single source of truth for all case study content and metadata. No CMS or content collections — everything is TypeScript.
 
-**Total:** 22 entries | **Published:** 14 | **Private/unlisted:** 8
+**Total:** 22 entries | **Published:** 13 | **Private/unlisted:** 9
 
 **Key fields on `CaseStudy`:**
 - `title`, `slug`, `industry[]`, `services[]`, `overview`
@@ -143,11 +143,17 @@ The single source of truth for all case study content and metadata. No CMS or co
 - `resolveColour(colour)` — converts bg class or hex to `{ class? } | { style? }`
 
 **Published case studies (slugs):**
-`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `insulation`, `miele-successful-plan-to-move-erp`, `pfg`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
+`ai-risk-calculator`, `bawbaw`, `bhn`, `cyprusays`, `eel`, `fletcher-dam`, `insulation`, `pfg`, `pixel-assist`, `simple`, `stemhub`, `toll`, `yoplait`
 
 **Temporarily unpublished:** `holmesglen` (since 2026-09-15). The entry has `published: false`, the page
 is renamed to `_holmesglen.astro` so Astro skips it, and `vercel.json` has a non-permanent redirect
 from `/case-studies/holmesglen` to `/case-studies`. Reverse all three to restore it.
+
+**Briefly published, now private again:** `miele-successful-plan-to-move-erp` was published on 2026-09-17
+and reverted the same day. The page is back in `case-studies/private/`, and `vercel.json` has a
+non-permanent redirect from the public `/case-studies/miele-successful-plan-to-move-erp` to
+`/case-studies`, because that URL was live and in the sitemap for a short window. Remove that redirect
+when republishing. The entry keeps its `drawerImage` ready for when it is featured again.
 
 **Asset convention per case study:** `src/assets/case-studies/<slug>/`
 - `tile.webp` — card/listing thumbnail
