@@ -121,7 +121,12 @@
     },
     {
       "source": "/case-studies/private/miele",
-      "destination": "/case-studies/private/miele-successful-plan-to-move-erp",
+      "destination": "/case-studies/miele-successful-plan-to-move-erp",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/miele-successful-plan-to-move-erp",
+      "destination": "/case-studies/miele-successful-plan-to-move-erp",
       "permanent": true
     }
   ]

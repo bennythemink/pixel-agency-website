@@ -279,8 +279,8 @@ const caseStudies: CaseStudy[] = [
       'Digital consulting and strategy for Miele Australia in the domestic and commercial appliances sector. Pixel Agency mapped its technology landscape ahead of the global SAP S/4HANA transition, securing a market-specific implementation that now benchmarks similar Miele markets.',
     colour: 'bg-pixel-poppy',
     image: miele,
-    published: false,
-    featured: false,
+    published: true,
+    featured: true,
     imagePosition: 'object-top',
     drawerPosition: 'object-top',
     imageAltText: 'Miele Australia consulting case study'
