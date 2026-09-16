@@ -281,8 +281,8 @@ const caseStudies: CaseStudy[] = [
     colour: 'bg-pixel-poppy',
     image: miele,
     drawerImage: mieleDrawer,
-    published: true,
-    featured: true,
+    published: false,
+    featured: false,
     imagePosition: 'object-top',
     drawerPosition: 'object-[0%_0%]',
     imageAltText: 'Miele Australia consulting case study'
