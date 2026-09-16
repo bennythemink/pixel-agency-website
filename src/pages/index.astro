@@ -182,6 +182,48 @@ const sectionCards = [
       </Grid>
     </section>
 
+    <section id="experience" class="py-16 lg:py-24">
+      <Grid>
+        <p class="col-span-12 lg:col-start-2 lg:col-span-11 text-2xl lg:text-4xl text-pixel-rosy font-sans font-light">
+          Our experience
+        </p>
+        <h2 class="col-span-12 lg:col-start-2 lg:col-span-5 text-3xl lg:text-[80px] mt-2 lg:mt-0">
+          We've been here before, whatever 'here' looks like for you.
+        </h2>
+        <div
+          class="col-span-12 lg:col-start-8 lg:col-span-4 flex flex-col justify-start gap-6 mt-8 lg:mt-0 text-[18px] lg:text-2xl leading-[0.76]"
+        >
+          <p>
+            From startups finding their footing to established businesses navigating complex digital change, and global
+            organisations operating at scale, our team has worked across it all. Construction, education, farming,
+            retail, automotive, fintech, and more. Projects of every size and complexity.
+          </p>
+          <p>
+            That range means we adapt to your context without losing our standard of care. And it gives us the
+            confidence to be selective, honest, and deeply involved rather than stretched thin or transactional.
+          </p>
+          <p>
+            That range extends geographically too. We are based in <a href="/melbourne">Melbourne</a> and work with businesses
+            across Australia, including
+            <a href="/sydney">Sydney</a>, <a href="/adelaide">Adelaide</a>, <a href="/brisbane">Brisbane</a>, <a
+              href="/perth">Perth</a
+            >, <a href="/canberra">Canberra</a>, <a href="/darwin">Darwin</a>, and <a href="/hobart">Hobart</a>.
+            Wherever you are, our standard of care travels with us.
+          </p>
+        </div>
+      </Grid>
+
+      <Grid>
+        <div class="col-span-full col-start-1 lg:col-start-2 lg:col-span-10 my-6 mt-5 lg:mt-20">
+          <CaseStudyDrawer />
+        </div>
+      </Grid>
+
+      <ClientLogos />
+
+      <Testimonials />
+    </section>
+
     <SectionCards text={sectionText} cards={sectionCards} displayTextBackground={false} />
 
     <!-- ══════ PIXEL ASSIST — horizontal scroll ══════ -->
@@ -270,47 +312,6 @@ const sectionCards = [
       </div>
     </section>
 
-    <section id="experience" class="py-16 lg:py-24">
-      <Grid>
-        <p class="col-span-12 lg:col-start-2 lg:col-span-11 text-2xl lg:text-4xl text-pixel-rosy font-sans font-light">
-          Our experience
-        </p>
-        <h2 class="col-span-12 lg:col-start-2 lg:col-span-5 text-3xl lg:text-[80px] mt-2 lg:mt-0">
-          We've been here before, whatever 'here' looks like for you.
-        </h2>
-        <div
-          class="col-span-12 lg:col-start-8 lg:col-span-4 flex flex-col justify-start gap-6 mt-8 lg:mt-0 text-[18px] lg:text-2xl leading-[0.76]"
-        >
-          <p>
-            From startups finding their footing to established businesses navigating complex digital change, and global
-            organisations operating at scale, our team has worked across it all. Construction, education, farming,
-            retail, automotive, fintech, and more. Projects of every size and complexity.
-          </p>
-          <p>
-            That range means we adapt to your context without losing our standard of care. And it gives us the
-            confidence to be selective, honest, and deeply involved rather than stretched thin or transactional.
-          </p>
-          <p>
-            That range extends geographically too. We are based in <a href="/melbourne">Melbourne</a> and work with businesses
-            across Australia, including
-            <a href="/sydney">Sydney</a>, <a href="/adelaide">Adelaide</a>, <a href="/brisbane">Brisbane</a>, <a
-              href="/perth">Perth</a
-            >, <a href="/canberra">Canberra</a>, <a href="/darwin">Darwin</a>, and <a href="/hobart">Hobart</a>.
-            Wherever you are, our standard of care travels with us.
-          </p>
-        </div>
-      </Grid>
-
-      <Grid>
-        <div class="col-span-full col-start-1 lg:col-start-2 lg:col-span-10 my-6 mt-5 lg:mt-20">
-          <CaseStudyDrawer />
-        </div>
-      </Grid>
-
-      <ClientLogos />
-
-      <Testimonials />
-    </section>
 
     <!-- ══════ OUR PROCESS — horizontal scroll ══════ -->
     <section id="process-wrapper" class="relative bg-pixel-platinum">
