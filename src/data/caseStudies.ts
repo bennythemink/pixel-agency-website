@@ -25,6 +25,7 @@ import bhnDrawer from '@assets/case-studies/bhn/drawer.webp'
 import yoplaitDrawer from '@assets/case-studies/yoplait/drawer.webp'
 import insulationDrawer from '@assets/case-studies/insulation/drawer.webp'
 import mieleDrawer from '@assets/case-studies/miele/drawer.webp'
+import tollDrawer from '@assets/case-studies/toll/drawer.webp'
 import holmesglenDrawer from '@assets/case-studies/holmesglen/drawer.svg'
 
 import type { ImageMetadata } from 'astro'
@@ -220,10 +221,11 @@ const caseStudies: CaseStudy[] = [
       'Two legacy sites consolidated into a unified brand, with discovery, design, and a head-office-ready business case delivered.',
     colour: 'bg-pixel-fire',
     image: toll,
+    drawerImage: tollDrawer,
     published: true,
-    featured: false,
+    featured: true,
     imagePosition: 'object-top',
-    drawerPosition: 'object-top',
+    drawerPosition: 'object-[0%_0%]',
     imageAltText: 'Toll Uncrewed Systems website case study'
   },
   {
