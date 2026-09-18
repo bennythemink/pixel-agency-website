@@ -111,7 +111,12 @@
     },
     {
       "source": "/case-studies/private/fort-knox",
-      "destination": "/case-studies/private/fort-knox-self-storage-real-time-booking",
+      "destination": "/case-studies/fort-knox-self-storage-real-time-booking",
+      "permanent": true
+    },
+    {
+      "source": "/case-studies/private/fort-knox-self-storage-real-time-booking",
+      "destination": "/case-studies/fort-knox-self-storage-real-time-booking",
       "permanent": true
     },
     {

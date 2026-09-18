@@ -55,9 +55,9 @@ const containerClass =
       const cr = resolveColour(item.colour)
       return (
         <div
-          class="drawer absolute inset-x-0 h-full flex flex-col"
+          class={`drawer absolute inset-x-0 h-full flex flex-col${cr.class ? ` ${cr.class}` : ''}`}
           data-index={i}
-          style={`z-index: ${i + 1}; top: ${i * BANNER_HEIGHT_MOBILE}px;`}
+          style={`${cr.style ? `${cr.style}; ` : ''}z-index: ${i + 1}; top: ${i * BANNER_HEIGHT_MOBILE}px;`}
         >
           <button
             class={`drawer-banner w-full text-left px-5 font-sans font-normal text-sm lg:text-base flex items-center shrink-0 hover:brightness-95 transition-[filter] cursor-pointer${cr.class ? ` ${cr.class}` : ''}`}

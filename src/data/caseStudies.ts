@@ -26,6 +26,7 @@ import yoplaitDrawer from '@assets/case-studies/yoplait/drawer.webp'
 import insulationDrawer from '@assets/case-studies/insulation/drawer.webp'
 import mieleDrawer from '@assets/case-studies/miele/drawer.webp'
 import tollDrawer from '@assets/case-studies/toll/drawer.webp'
+import fortKnoxDrawer from '@assets/case-studies/fort-knox/drawer.webp'
 import holmesglenDrawer from '@assets/case-studies/holmesglen/drawer.svg'
 
 import type { ImageMetadata } from 'astro'
@@ -354,13 +355,14 @@ const caseStudies: CaseStudy[] = [
     slug: 'fort-knox-self-storage-real-time-booking',
     industry: ['Self Storage'],
     services: ['Discovery + direction', 'Design', 'Development', 'Consulting'],
-    overview: 'TBD',
-    colour: 'bg-pixel-teal',
+    overview: 'A platform to run their business across 11 storage locations',
+    colour: 'bg-pixel-solar',
     image: fortKnox,
-    published: false,
-    featured: false,
+    drawerImage: fortKnoxDrawer,
+    published: true,
+    featured: true,
     imagePosition: 'object-top',
-    drawerPosition: 'object-top',
+    drawerPosition: 'object-[0%_0%]',
     imageAltText: 'Fort Knox Self Storage website case study'
   },
   {
