@@ -226,6 +226,25 @@ controller.removeRepulsionElement(el) // remove it
 
 ---
 
+## Homepage Scroll (Lenis + ScrollTrigger)
+
+`src/pages/index.astro` drives the homepage with Lenis smooth scroll on top of GSAP ScrollTrigger.
+Most of the page's height does not exist in the markup — it is created at runtime:
+`initScrollTriggers()` sets `#process-wrapper`'s height from the horizontal track width, and
+`ScrollTrigger.refresh()` creates the pin spacers. Together that is several thousand pixels.
+
+**Lenis caches its scroll limit and clamps to it.** Anything that changes page height must be
+followed by `lenis.resize()`, or the page silently refuses to scroll past the stale limit — with
+plenty of document still below. There are three sync points, and all three need to stay in step:
+the `fonts.ready` block (after the build), the `resize` handler, and the `load` handler.
+
+**`load` and `document.fonts.ready` race, and either can win.** When `load` wins it runs before
+anything has been built, so measuring there alone is useless — this caused a long-lived Safari bug
+where scrolling stuck exactly at the start of `#process-wrapper`, intermittently, and a reload
+"fixed" it only because cached fonts let `fonts.ready` win. Four earlier fixes missed it by
+assuming stale pin spacers or late images. The tell is `lenis.limit` being far below
+`document.documentElement.scrollHeight - window.innerHeight`.
+
 ## Colour System
 
 **Single source of truth:** `src/config/colours.ts`  
@@ -340,4 +359,4 @@ When opening a PR that changes any of the following, update this file as part of
 
 ---
 
-*Last updated: 2026-09-18*
+*Last updated: 2026-09-19*
