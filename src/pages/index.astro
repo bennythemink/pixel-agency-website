@@ -722,6 +722,7 @@ const sectionCards = [
 
   const lenis = new Lenis()
 
+
   lenis.on('scroll', ScrollTrigger.update)
 
   gsap.ticker.add((time) => {
@@ -1674,6 +1675,13 @@ const sectionCards = [
     initHeroScroll()
     initScrollTriggers()
     ScrollTrigger.refresh()
+    // This block is what gives the page its real height: initScrollTriggers()
+    // sets #process-wrapper's height and ScrollTrigger.refresh() creates the
+    // pin spacers, together adding several thousand pixels. Lenis measured the
+    // document when it was constructed, so its scroll limit is still the old,
+    // short value and it will clamp scrolling to it. Re-measure here, after the
+    // growth, or the page refuses to scroll past where #process-wrapper starts.
+    lenis.resize()
     lenis.start()
   })
 
@@ -1684,14 +1692,14 @@ const sectionCards = [
     lenis.resize()
   })
 
-  // Fonts resolve before images (case studies, testimonials, client logos)
-  // finish loading. If those images land after the fonts.ready refresh above,
-  // page height grows but ScrollTrigger's pin spacer (from #assist-wrapper)
-  // stays baked in at the old height — Safari then caps max scroll right at
-  // that pin boundary, just before #process-wrapper. Re-measure once
-  // everything has actually loaded to catch that case.
+  // `load` and `document.fonts.ready` race, and either can win. When `load`
+  // wins, this runs before the fonts.ready block has built anything, so it
+  // measures a page that is still thousands of pixels short — which is why the
+  // resize above is the one that matters. This pass still earns its place for
+  // the other ordering, catching anything that changes height after the build.
   window.addEventListener('load', () => {
     sizeAllTracks()
     ScrollTrigger.refresh()
+    lenis.resize()
   })
 </script>
