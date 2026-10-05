@@ -368,6 +368,18 @@ const insights: Insight[] = [
     featured: false,
     tags: ['Digital Strategy'],
     colour: 'pixel-fire'
+  },
+  {
+    title: 'How Do You Stand Out When Every Competitor Offers The Same Services?',
+    publishedAt: '2026-10-06',
+    dateLabel: '6th October, 2026',
+    summary:
+      'Why a list of capabilities is no longer enough to stand out, what we found when we looked at our own website, and the questions we are asking ourselves as we refine our messaging.',
+    slug: 'how-do-you-stand-out-when-every-competitor-offers-the-same-services',
+    published: true,
+    featured: false,
+    tags: ['Marketing'],
+    colour: 'pixel-fawn'
   }
 ]
 
